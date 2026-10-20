@@ -1,0 +1,62 @@
+
+/* 1. CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 2. BODY STYLE */
+body {
+    font-family: jetbrains-mono, monospace;
+    line-height: 1.6;
+    color: #040404;
+    background-color: #ffffff;
+}
+
+/* 3. LAYOUT CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 4. HEADER STYLE */
+header {
+    background-color: aquamarine;
+    color: rgb(1, 1, 1);
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 3px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 5px;
+}
+
+nav {
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+
+nav a {
+    font-size: 1.25rem;
+    color: blue;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+nav a:hover, nav a.active {
+    background-color: rgba(255, 255, 255, 0.25);
+    font-weight: bold;
+}
