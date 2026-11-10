@@ -1,16 +1,17 @@
 /* 1 CSS Variable */
 :root {
-    --primary-color: #249551;
-    --primary_dark: rgb(75, 132, 255);
-    --secondry-color: black;
-    --accent-color: #ff7c6b;
-    --bg-light: #f9f9f9;
-    --white: #fdfcfc;
-    --text-muted: #6c757d;
-    --border-color: #dee2e6;
-    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --primary-color: #2D5A44;
+    --primary_light: #EBF2EE;
+    --secondary-color: #52796F;
+    --accent-color: #88AB8E;
+    --bg-light: #F8FAF9;
+    --white: #FFFFFF;
+    --text-main: #2D3748;
+    --text-muted: #64748B;
+    --border-color: #E2E8F0;
+    --shadow-soft: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
     --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.15);
-    --transition-fast: all 0.3s ease;
+    --transition: all 0.25s ease-in-out;
 }
 
 
@@ -23,9 +24,9 @@
 }
 /* 3. BODY STYLE */
 body {
-    font-family: jetbrains-mono, monospace;
+    font-family: plus Jakarta Sans, system-ui, -apple-system, sans-serif;
     line-height: 1.6;
-    color: var(--secondry-color);
+    color: var(--text-main);
     background-color: var(--bg-light);
 }
 
@@ -112,7 +113,7 @@ main {
 /* card  */
 .card {
     background-color: var(--white);
-    border-radius: 10px;
+    border-radius: 25% 10%;
     box-shadow: var(--shadow-soft);
     overflow: hidden;
     flex: 1 1 300px;
@@ -152,3 +153,11 @@ main {
     color: var(--text-muted);
     margin-bottom: 15px;
 }
+
+.card-price {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Header Biodata */
