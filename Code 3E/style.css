@@ -9,6 +9,7 @@
     --text-main: #2D3748;
     --text-muted: #64748B;
     --border-color: #E2E8F0;
+    --radius: 12px;
     --shadow-soft: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
     --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.15);
     --transition: all 0.25s ease-in-out;
@@ -161,3 +162,99 @@ main {
 }
 
 /* Header Biodata */
+.bio-header {
+    background: linear-gradient(135deg, var(--primary-color), #1E3E2F)
+    color: var(white);
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 30px;
+}
+
+.bio-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
+
+.bio-header .subtitle {
+    font-size: 1.1rem;
+    color: #D1E0D7;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.bio-header .contact-info {
+    font-size: 0.88rem;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* layout container */
+.bio-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+}
+
+/* card section */
+.bio-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding:24px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 24px;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+.bio-card h2 {
+    font-size: 1.15rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-light);
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* list & badge styling */
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background-color: var(--primary_light);
+    color: var(--primary-color);
+    padding: 6px 24px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.timeline-item {
+    margin-bottom: 16px;
+}
+
+.timeline-item h3 {
+    font-size: 1rem;
+    margin-bottom: 2px;   
+}
+
+.timeline-item .periode {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
