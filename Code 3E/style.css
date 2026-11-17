@@ -194,6 +194,11 @@ main {
     flex-wrap: wrap;
 }
 
+.bio-header .bio-nav {
+    margin-top: 15px;
+    text-shadow: #1E3E2F 0px 1px 2px;
+}
+
 /* layout container */
 .bio-grid {
     display: grid;
