@@ -252,14 +252,23 @@ main {
     margin-bottom: 16px;
 }
 
+.timeline-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 6px;
+}
 .timeline-item h3 {
     font-size: 1rem;
-    margin-bottom: 2px;   
+    margin-bottom: 0;   
 }
 
 .timeline-item .periode {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
     margin-bottom: 6px;
+    font-weight: 500;
 }
 
